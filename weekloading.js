@@ -4,6 +4,8 @@ const work_details = [
     { week: "3",work: "index.html" },
     { week: "4",work: "hero.html" },
     { week: "4",work: "teamactivity.html" },
+
+    { week: "4/npm/dist",work: "index.html" },
   ];
   var ol_links = document.getElementById("links");
   for(week in work_details){
