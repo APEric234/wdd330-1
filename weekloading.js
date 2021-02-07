@@ -6,7 +6,9 @@ const work_details = [
     { week: "4",Message:"week4: team activity",work: "teamactivity.html" },
 
     { week: "4/npm/dist",Message:"week4: npm",work: "index.html" },
-  ];
+    { week: "5",Message:"week5: hero with logging",work: "hero.html" },
+
+];
   var ol_links = document.getElementById("links");
   for(week in work_details){
       week=work_details[week];
