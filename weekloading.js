@@ -7,6 +7,8 @@ const work_details = [
 
     { week: "4/npm/dist",Message:"week4: npm",work: "index.html" },
     { week: "5",Message:"week5: hero with logging",work: "hero.html" },
+    
+    { week: "7",Message:"week7: hero with random",work: "ninja.html" },
 
 ];
   var ol_links = document.getElementById("links");
