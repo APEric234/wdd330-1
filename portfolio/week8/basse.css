@@ -1,0 +1,86 @@
+.text{
+        font-weight:bold;
+}
+
+.svgcontainer {
+  width: 40vw;
+  height: 56vw;
+  border: 1px solid;
+  background-color: blue;
+  fill: yellow;
+  stroke: purple;
+  stroke-width: 1;
+}
+
+
+#turned {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+#turned1 {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+}
+
+#turned2 {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+#turned3 {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(160deg);
+          transform: rotate(160deg);
+}
+
+#turned4 {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(200deg);
+          transform: rotate(200deg);
+}
+
+#turned5 {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+#turned6 {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
+}
+
+#turned7 {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(320deg);
+          transform: rotate(320deg);
+}
+
+#turned8 {
+  transform-box: filled;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}

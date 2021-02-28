@@ -9,6 +9,7 @@ const work_details = [
     { week: "5",Message:"week5: hero with logging",work: "hero.html" },
     
     { week: "7",Message:"week7: hero with random",work: "ninja.html" },
+    { week: "8",Message:"week8: transform example",work: "base.html" },
 
 ];
   var ol_links = document.getElementById("links");
