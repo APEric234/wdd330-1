@@ -1,0 +1,104 @@
+nav {
+  background-color: aliceblue;
+  display: inline;
+}
+
+nav .navbar-toggler {
+  display: none;
+}
+
+nav a {
+  height: 40px;
+  font-size: calc(10px + 1.5vw);
+}
+
+nav a.navbar-brand {
+  padding: 10px;
+  text-decoration: none;
+  background-color: aliceblue;
+}
+
+nav div {
+  height: 2vw;
+  float: right;
+  background-color: aliceblue;
+  padding: none;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li.active {
+  font-weight: bold;
+}
+
+nav li.active a {
+  text-decoration: none;
+}
+
+.main {
+  margin: auto;
+  width: 80vw;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    background-color: red;
+  }
+  nav div#navbarToggler {
+    display: none;
+  }
+  nav div#navbarToggler * {
+    display: none;
+  }
+  nav .navbar-toggler {
+    display: inline;
+    background: black;
+    min-width: 30px;
+  }
+  nav .navbar-toggler .navbar-toggler-icon {
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/button.svg");
+  }
+  nav div.open#navbarToggler {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+  }
+  nav div.open#navbarToggler ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    width: 100vh;
+  }
+  nav div.open#navbarToggler ul li {
+    width: 50vw;
+    margin-left: 20vw;
+    margin-right: 29vw;
+    display: block;
+  }
+  nav div.open#navbarToggler ul li * {
+    display: block;
+    text-align: center;
+  }
+  nav div.open#navbarToggler button.navbar-toggler {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: white;
+  }
+  nav div.open#navbarToggler button.navbar-toggler span {
+    display: block;
+    background-image: url("assets/button.svg");
+  }
+}
+/*# sourceMappingURL=style.css.map */
