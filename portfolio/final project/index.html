@@ -38,8 +38,20 @@
     <p>
       This site is used for auto generating dungeons from the ground up to character names to maps to how the quest begins
     </p>
+    <button type="button" onclick="getRandomPokeName()">Request Name</button>
+    <p id="demo"></p>
+    <input type="text" id="fileName"></input>
+    <label for="fileName">Name of save File</label>
+    <button type="button" onclick="saveRandomName()">save data</button>
+    <button type="button" onclick="checkSavedFiles()">check saved files</button>
+    <input type="text" id="fileNameR"></input>
+    <label for="fileName">Name of save File to remove</label>
+    <button type="button" onclick="removeFile()">remove save files</button>
+   
   </div>
+  <ul id="displayFIles">
 
+  </ul>
 </body>
 
 </html>
