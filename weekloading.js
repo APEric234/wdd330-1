@@ -12,6 +12,8 @@ const work_details = [
     { week: "8",Message:"week8: transform example",file: "base.html" },
     { week: "10",Message:"week10: notes on fetch and client side validation",file: "index.html" },
 
+    { week: "13",Message:"Final Project",file: "finalProject/index.html" },
+
 
 ];
   var ol_links = document.getElementById("links");

@@ -1,6 +1,18 @@
-nav {
-  background-color: aliceblue;
-  display: inline;
+nav div.navbar {
+  display: block;
+  position: relative;
+}
+
+nav div.navbar::before {
+  display: block;
+  content: "";
+  width: 100vw;
+  height: 40px;
+  background-color: #99CFFF;
+}
+
+nav div#navbarToggler {
+  width: 70vw;
 }
 
 nav .navbar-toggler {
@@ -8,25 +20,42 @@ nav .navbar-toggler {
 }
 
 nav a {
-  height: 40px;
-  font-size: calc(10px + 1.5vw);
+  height: 20px;
+  font-size: calc(5px + 1.5vw);
 }
 
 nav a.navbar-brand {
-  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   text-decoration: none;
-  background-color: aliceblue;
+  background-color: #99CFFF;
 }
 
-nav div {
-  height: 2vw;
+nav div:not(.navbar) {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   float: right;
-  background-color: aliceblue;
-  padding: none;
+  position: relative;
+  top: -40px;
+  padding-top: 0%;
+  background-color: #99CFFF;
+}
+
+nav div:not(.navbar) ul {
+  float: right;
+  margin: 0%;
+  width: 80%;
 }
 
 nav li {
   display: inline;
+  width: 30%;
+  height: 80%;
 }
 
 nav li.active {
@@ -37,12 +66,58 @@ nav li.active a {
   text-decoration: none;
 }
 
+div#files {
+  position: relative;
+  float: right;
+  left: -100px;
+  border: dashed black 5px;
+}
+
 .main {
+  min-height: 40vh;
   margin: auto;
-  width: 80vw;
+  width: 100vw;
+  padding: 30px;
+}
+
+.main #saves {
+  width: 50vw;
+}
+
+.error {
+  display: none;
+  background-color: red;
+}
+
+footer {
+  position: relative;
+  top: -30px;
+  display: block;
+  text-align: center;
+  height: 20vh;
+  width: 100%;
+}
+
+footer div {
+  line-height: 5vh;
+  width: 30vw;
+}
+
+footer div#index {
+  line-height: 20vh;
+}
+
+footer * {
+  display: inline-block;
+  text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
+  span.sr-only {
+    position: relative;
+    top: -20px;
+    left: 60px;
+  }
   nav {
     background-color: red;
   }
@@ -56,6 +131,9 @@ nav li.active a {
     display: inline;
     background: black;
     min-width: 30px;
+  }
+  nav .navbar-toggler.open {
+    background: red;
   }
   nav .navbar-toggler .navbar-toggler-icon {
     height: 100%;
@@ -81,6 +159,7 @@ nav li.active a {
     width: 100vh;
   }
   nav div.open#navbarToggler ul li {
+    position: relative;
     width: 50vw;
     margin-left: 20vw;
     margin-right: 29vw;

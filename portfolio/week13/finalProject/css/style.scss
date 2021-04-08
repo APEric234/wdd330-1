@@ -1,0 +1,179 @@
+$nav-background:#99CFFF;
+$nav-image:url("assets/button.svg");
+nav{
+  div.navbar{
+    display:block;
+    &::before{
+      display:block;
+        content: "";
+        width:100vw;
+        height: 40px;
+        background-color: $nav-background;
+    }
+    position:relative;
+  }
+  div#navbarToggler{
+    width:70vw;
+  }
+  
+  .navbar-toggler{
+   
+    display: none;
+  }
+  a{
+    height:20px;
+    font-size: calc(5px + 1.5vw);
+    
+  }
+  a.navbar-brand{
+    position: absolute;
+    top:0px;
+    left:5px;
+    height: min-content;
+    text-decoration: none;
+    background-color: $nav-background;
+  
+  }
+  div:not(.navbar){
+    height:min-content;
+    float:right;
+    position: relative;
+    top: -40px;
+    padding-top: 0%; 
+    background-color: $nav-background;
+    ul{
+     float:right;
+      margin:0%;
+      width:80%;
+    }
+  }
+  li {
+    display: inline;
+    width:30%;
+    height:80%;
+  }
+  li.active{
+    font-weight: bold;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+div#files{
+  position: relative;
+  float:right;
+  left:-100px;
+  border:dashed black 5px;
+  
+}
+.main{
+  min-height: 40vh;
+  margin:auto;
+  width:100vw;
+  padding:30px;
+  #saves{
+    width:50vw;
+  }
+}
+.error{
+  display:none;
+  background-color: red;
+}
+footer{
+  position:relative;
+  top:-30px;
+  display: block;
+  text-align: center;
+  height:20vh;
+  width:100%;
+  div{
+    line-height: 5vh;
+    width:30vw;
+    &#index{
+      line-height: 20vh;
+    }
+  }
+  *{
+    display: inline-block;
+    text-align: center;
+  }
+  
+}
+@media only screen and ( max-width:800px){
+  span.sr-only{
+    position: relative;
+    top:-20px;
+    left:60px;
+  }
+  nav{
+    background-color: red;
+
+    
+    div#navbarToggler{
+      display:none;
+      *{
+        display:none;
+      }
+    }
+    .navbar-toggler{
+      display: inline;
+      background: black;
+      min-width: 30px;
+      &.open{
+        background: red;
+      }
+      .navbar-toggler-icon{
+        height:100%;
+        width:100%;
+        background-image: $nav-image;
+      }
+    }
+  
+    div.open#navbarToggler{
+      display:block;
+      position: fixed;
+      top:0;
+      left:0;
+      background: black;
+      width:100vw;
+      height:100vh;
+      ul{
+        display:block;
+        position: fixed;
+      top:0;
+      left:0;
+      background: black;
+      width:100vw;
+      width:100vh;
+      
+     
+      li{
+        position: relative;
+        width:50vw;
+        margin-left:20vw;
+        margin-right:29vw;
+        display:block;
+        *{
+        display:block;
+        text-align: center;
+      }
+      }
+      }
+      button.navbar-toggler{
+        display:block;
+        height:50px;
+      width:50px;
+      background: white;
+      span{
+        display:block;
+        background-image: url("assets/button.svg");
+      }
+    }
+  }
+
+
+    
+  
+  }
+ 
+}

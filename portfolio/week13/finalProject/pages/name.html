@@ -1,0 +1,85 @@
+<html>
+<header>
+
+  <link rel='stylesheet' href='../css/name.css'>
+  <script type="text/javascript" src="../js/menuAni.js"></script>
+</header>
+
+<body onload="pageFullyLoaded()">
+  <nav class="navbar">
+    <div class="navbar">
+    <a class="navbar-brand" href="#">Auto Dungeoneer</a>
+    <button class="navbar-toggler" onclick="animateMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Name Generator <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Dungeon Generator</a>
+        </li> future feature-->
+        <li class="nav-item">
+          <a class="nav-link" href="hook.html">Hook Generator</a>
+        </li>
+
+      </ul>
+      <button class="navbar-toggler"  onclick="animateMenu()" id="navbarToggler2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+  </nav>
+  <div class="main">
+    <div id="requets">
+    <div class="section" id="name">
+    <button type="button" onclick="getRandomPokeName()">Request Name</button>
+    <p id="demo"></p>
+    </div>
+    <div id="save" class="section">
+      <P>Do you wish to save the name for later use?</P>
+    <input type="text" id="fileName"></input>
+    <label for="fileName">Name of save </label>
+    <label for="fileName" id="fileError" class="error">File name is required</label><br>
+    <button type="button" onclick="saveRandomName()">save data</button><br>
+    <button type="button" onclick="checkSavedFiles()">check saved files</button><br>
+    
+    <P>Do you wish to remove a previously saved name?</P>
+    <input type="text" id="fileNameR"></input>
+    <label for="fileName">Name of save File to remove</label><br>
+    <button type="button" onclick="removeFile()">remove save files</button>
+    </div>
+    
+   
+  </div>
+
+<div id="files">
+  Files to load from
+  <ul id="displayFiles">
+
+  </ul>
+  </div>
+</div>
+  <footer>
+    <div>
+
+      All css/html/javascript original properties of <BR>
+        <b>Eric Allen</b> 
+    </div>
+    <div>
+This Site consumes some resources from the <A href="https://pokeapi.co/">poke Api</A> and <A href="https://randomuser.me/">randomuser api</A>
+  </div>
+  <div id="index">
+
+    <a href="../../index.html">class portfolio</a>
+  </div>
+  </footer>
+</body>
+
+</html>
