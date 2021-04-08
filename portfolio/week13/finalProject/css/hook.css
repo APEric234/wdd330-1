@@ -44,16 +44,10 @@ footer {
 
 footer div {
   line-height: 5vh;
-  width: 30vw;
+  width: 25vw;
 }
 
 footer div#index {
   line-height: 20vh;
-}
-
-div#files {
-  position: relative;
-  float: right;
-  left: -100px;
 }
 /*# sourceMappingURL=hook.css.map */
