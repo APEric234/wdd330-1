@@ -6,7 +6,7 @@ function pageFullyLoaded(){
 }
 var startLine = ["iNsertName watchs as he enters the" ,"He invites iNsertName to his ", "A caped figred descretly singles iNsertName, iNsertName follow him to the ", "Something weird is happening at the "];
 var emotions = ["scared","happy","sad","angry",'passionate','busy'];
-var descrLines =["iNsertName notices the people around seem oddly ", "your guide seems strangely"];
+var descrLines =["iNsertName notices the people around seem oddly ", "your guide seems strangely ", "On looking around iNsertName feels "];
 var locations= ["castle", "bar","tavern","forest","bay",'home','hamlet','village'];
 
 function animateMenu() {
@@ -26,14 +26,17 @@ function animateMenu() {
 }
 function getRandomHook(){
   var fullHook="";
-  var start=startLine[getRandomArbitrary(0,startLine.length)];
+  var start=startLine[getRandomArbitrary(0,startLine.length-1)];
 
-  var place=locations[getRandomArbitrary(0,locations.length)];
-  var descrLine=descrLines[getRandomArbitrary(0,descrLines.length)];
-  var emo=emotions[getRandomArbitrary(0,emotions.length)];
+  var place=locations[getRandomArbitrary(0,locations.length-1)];
+  var rarFordes=getRandomArbitrary(0,descrLines.length-1);
+  var descr=descrLines[rarFordes];
+  var emo=emotions[getRandomArbitrary(0,emotions.length-1)];
   //compile randomly chosen pieces
+  console.log(rarFordes);
+  console.log(descr);
  fullHook=start+place+".\n";
- fullHook=fullHook+descrLine+emo+".\n";
+ fullHook=fullHook+descr+emo+".\n";
     
   document.getElementById("demo").innerHTML = fullHook
 
