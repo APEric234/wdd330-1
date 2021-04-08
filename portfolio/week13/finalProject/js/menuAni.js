@@ -11,11 +11,17 @@ var locations= ["castle", "bar","tavern","forest","bay",'home','hamlet','village
 
 function animateMenu() {
   var element = document.getElementById("navbarToggler");
- 
+  var element2 = document.getElementById("sr-only");
+
   if(element.classList.contains("open")){
     element.classList.remove("open");
+    element2.classList.remove("open");
+    element2.innerHtml="Current";
+    element2.innerText="Current";
   }else{
     element.classList.add("open");
+    element2.classList.add("open");
+    element2.innerText=" ";
   }
 }
 function getRandomHook(){

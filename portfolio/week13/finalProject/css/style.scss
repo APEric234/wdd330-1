@@ -1,5 +1,5 @@
 $nav-background:#99CFFF;
-$nav-image:url("assets/button.svg");
+$nav-image:url("../assets/button.svg");
 nav{
   div.navbar{
     display:block;
@@ -19,6 +19,7 @@ nav{
   .navbar-toggler{
    
     display: none;
+    
   }
   a{
     height:20px;
@@ -101,11 +102,7 @@ footer{
   
 }
 @media only screen and ( max-width:800px){
-  span.sr-only{
-    position: relative;
-    top:-20px;
-    left:60px;
-  }
+
   nav{
     background-color: red;
 
@@ -117,16 +114,21 @@ footer{
       }
     }
     .navbar-toggler{
+      position:relative;
+      z-index: 100;
       display: inline;
       background: black;
       min-width: 30px;
+     
       &.open{
         background: red;
       }
       .navbar-toggler-icon{
-        height:100%;
-        width:100%;
+        &::before{
+          content:"Open menu"
+        }
         background-image: $nav-image;
+        border:1px red solid;
       }
     }
   
